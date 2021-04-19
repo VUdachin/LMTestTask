@@ -40,7 +40,7 @@ extension UIColor {
     }
     
     class var leroyMerlinColor: UIColor {
-        let color = UIColor(hex: "#71c154")
+        let color = UIColor(hex: "#72c154")
         return color!
     }
 }

@@ -93,19 +93,16 @@ extension HorizontalCell: UICollectionViewDataSource, UICollectionViewDelegateFl
             cell.configure(with: model)
             return cell
         }
-        
-        
     }
     
     // MARK: - UICollectionViewDelegateFlowLayout
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let model = products?[indexPath.row]
         if model?.price == nil {
-            return CGSize(width: (frame.width / 3 - 16), height: (frame.width / 3) - 16)
+            return CGSize(width: (frame.width / 3) - 16, height: (frame.width / 3) - 16)
         } else {
             return CGSize(width: (frame.width / 3) - 16, height: (frame.height))
         }
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

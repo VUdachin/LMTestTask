@@ -14,6 +14,8 @@ class DepartmentCell: UICollectionViewCell {
     private lazy var productImageView: UIImageView = {
         let image = UIImageView()
         image.contentMode = .scaleAspectFit
+        image.layer.cornerRadius = 12
+        image.clipsToBounds = true
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
@@ -22,8 +24,6 @@ class DepartmentCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupCell()
-        backgroundColor = .red
-        layer.cornerRadius = 4
     }
 
     required init?(coder: NSCoder) {
@@ -37,10 +37,9 @@ class DepartmentCell: UICollectionViewCell {
     
     private func setupCell() {
         setupSubViews()
-        layer.cornerRadius = 4
         
         NSLayoutConstraint.activate([
-            
+ 
             productImageView.widthAnchor.constraint(equalTo: contentView.widthAnchor),
             productImageView.heightAnchor.constraint(equalTo: contentView.heightAnchor)
 
@@ -50,6 +49,14 @@ class DepartmentCell: UICollectionViewCell {
     // MARK: - Public Methods
     func configure(with model: Product) {
         productImageView.image = UIImage(named: model.image)
+    }
+    
+    func configureAsCatalogCell() {
+        productImageView.image = UIImage(named: "Catalog")
+    }
+    
+    func configureAsMoreCell() {
+        productImageView.image = UIImage(named: "WatchAll")
     }
 
 }

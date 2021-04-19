@@ -10,6 +10,7 @@ import UIKit
 class SectionsHeaderView: UICollectionReusableView {
     static var reuseIdentifier = "SectionsHeader"
     
+    // MARK: - UI Outlets
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 22, weight: .heavy)
@@ -19,6 +20,7 @@ class SectionsHeaderView: UICollectionReusableView {
         return label
     }()
     
+    // MARK: - init
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupHeader()
@@ -28,6 +30,7 @@ class SectionsHeaderView: UICollectionReusableView {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Private Methods
     private func setupSubviews() {
         addSubview(titleLabel)
     }
@@ -45,6 +48,7 @@ class SectionsHeaderView: UICollectionReusableView {
         ])
     }
     
+    // MARK: - Public Methods
     func configureSection(with title: String?) {
         titleLabel.text = title
     }

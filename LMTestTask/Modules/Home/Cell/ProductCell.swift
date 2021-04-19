@@ -20,7 +20,7 @@ class ProductCell: UICollectionViewCell {
     
     private lazy var productPriceLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        label.font = UIFont.systemFont(ofSize: 18, weight: .bold)
         label.numberOfLines = 1
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -79,8 +79,16 @@ class ProductCell: UICollectionViewCell {
     // MARK: - Public Methods
     func configure(with model: Product) {
         productImageView.image = UIImage(named: model.image)
-        productPriceLabel.text = String(model.price ?? 0.00) + "₽/шт."
         productNameLabel.text = model.name ?? ""
+        
+        let attrStr1 = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 18, weight: .bold)]
+        let attrStr2 = [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 12, weight: .bold)]
+        let rub = NSMutableAttributedString(string: "\(Double(model.price!))", attributes: attrStr1)
+        let unit = NSMutableAttributedString(string: " ₽/шт.", attributes: attrStr2)
+        rub.append(unit)
+        productPriceLabel.attributedText = rub
     }
+    
+
 
 }

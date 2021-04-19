@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct HomeSection {
+    var type: String
+    var title: String?
+    var items: [Product]?
+}
