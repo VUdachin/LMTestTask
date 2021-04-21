@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B12EF63B263022E700FC5B26 /* SimulatorScreenShot in Resources */ = {isa = PBXBuildFile; fileRef = B12EF63A263022E700FC5B26 /* SimulatorScreenShot */; };
 		B16255EC26299738005FC110 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16255EB26299738005FC110 /* AppDelegate.swift */; };
 		B16255EE26299738005FC110 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16255ED26299738005FC110 /* SceneDelegate.swift */; };
 		B16255F026299738005FC110 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16255EF26299738005FC110 /* HomeViewController.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		B12EF63826301B4000FC5B26 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B12EF63A263022E700FC5B26 /* SimulatorScreenShot */ = {isa = PBXFileReference; lastKnownFileType = file; path = SimulatorScreenShot; sourceTree = "<group>"; };
 		B16255E826299738005FC110 /* LMTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B16255EB26299738005FC110 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B16255ED26299738005FC110 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				B12EF63826301B4000FC5B26 /* README.md */,
+				B12EF63A263022E700FC5B26 /* SimulatorScreenShot */,
 				B16255EA26299738005FC110 /* LMTestTask */,
 				B16255E926299738005FC110 /* Products */,
 			);
@@ -215,6 +218,7 @@
 				B16255F826299739005FC110 /* LaunchScreen.storyboard in Resources */,
 				B16255F526299739005FC110 /* Assets.xcassets in Resources */,
 				B16255F326299738005FC110 /* Main.storyboard in Resources */,
+				B12EF63B263022E700FC5B26 /* SimulatorScreenShot in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

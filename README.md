@@ -6,3 +6,4 @@
 Модель данных была представлена в виде массива, за неимением API.
 
 
+![alt text](https://github.com/VUdachin/LMTestTask/SimulatorScreenShot "")​
