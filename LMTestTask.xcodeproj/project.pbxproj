@@ -24,6 +24,7 @@
 		B1D62DE1262C91D40040CAAD /* NavigationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D62DE0262C91D40040CAAD /* NavigationHeaderView.swift */; };
 		B1D62DE6262C9D470040CAAD /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D62DE5262C9D470040CAAD /* UIColor+Extension.swift */; };
 		B1D62DF0262D51EF0040CAAD /* UiTextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1D62DEF262D51EF0040CAAD /* UiTextField+Extension.swift */; };
+		B1F7B2692633137A00ADD4A0 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1F7B2682633137A00ADD4A0 /* UICollectionView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		B1D62DE0262C91D40040CAAD /* NavigationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHeaderView.swift; sourceTree = "<group>"; };
 		B1D62DE5262C9D470040CAAD /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B1D62DEF262D51EF0040CAAD /* UiTextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiTextField+Extension.swift"; sourceTree = "<group>"; };
+		B1F7B2682633137A00ADD4A0 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				B1D62DE5262C9D470040CAAD /* UIColor+Extension.swift */,
+				B1F7B2682633137A00ADD4A0 /* UICollectionView+Extension.swift */,
 				B1D62DEF262D51EF0040CAAD /* UiTextField+Extension.swift */,
 			);
 			path = Extensions;
@@ -237,6 +240,7 @@
 				B162561C2629DC1A005FC110 /* HomeSection.swift in Sources */,
 				B1D62DF0262D51EF0040CAAD /* UiTextField+Extension.swift in Sources */,
 				B162560226299B9C005FC110 /* ProductCell.swift in Sources */,
+				B1F7B2692633137A00ADD4A0 /* UICollectionView+Extension.swift in Sources */,
 				B16255EC26299738005FC110 /* AppDelegate.swift in Sources */,
 				B16255EE26299738005FC110 /* SceneDelegate.swift in Sources */,
 				B162560D2629AD5D005FC110 /* Product.swift in Sources */,

@@ -97,6 +97,11 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
+        if mockData.count == 0 {
+            collectionView.setEmptyMessage("Что-то пошло не так.")
+        } else {
+            collectionView.restoreState()
+        }
         return mockData.count
     }
     
